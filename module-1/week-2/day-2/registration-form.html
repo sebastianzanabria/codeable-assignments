@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <main>
+      <fieldset>
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          value="first_name"
+        />
+        <br />
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          value="last_name"
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="email" required />
+        <br />
+        <label for="zip-code">Zip Code</label>
+        <input
+          type="tel"
+          name="zip-code"
+          id="zip-code"
+          pattern="[0-9]{6}"
+          placeholder="123456"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required /> <br />
+        <label for="practicing-status">Practicind Status</label>
+        <select
+          name="practicing-status"
+          id="practicing-status"
+          size="3"
+          required
+        >
+          <option value="0">Practicing Lawyer</option>
+          <option value="1">Non Practicing Lawyer</option>
+          <option value="2">Retired Lawyer</option>
+        </select>
+        <br />
+        <label for="area-expertise">Area of legal expertise</label>
+        <select name="area-expertise" id="area-expertise">
+          <option value="antitrust">Antitrust</option>
+          <option value="civil_rights">Civil Rights</option>
+          <option value="inmigration">Inmigration</option>
+          <option value="memes">Memes</option>
+          <option value="gaming">Gaming</option>
+          <option value="pretending_to_work">Pretending to Work</option>
+          <option value="other" selected>Other</option>
+        </select>
+        <br />
+        <label for="years-of-experience">Years of experience</label>
+        <input
+          type="number"
+          name="years-of-experience"
+          id="years-of-experience"
+          min="0"
+          max="60"
+          required
+        />
+        <br />
+        <label for="languages">Languages</label> <br />
+        <select name="languages" id="languages" multiple>
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <option value="do">Dothraki</option>
+          <option value="ky">Kryptonese</option>
+          <option value="kl">Klingon</option>
+          <option value="vu">Vulcan</option>
+          <option value="ali">Alienese</option>
+          <option value="el">Elvish</option>
+        </select>
+        <br />
+        <label for="phone-number">Cell Phone Number</label>
+        <input
+          type="tel"
+          name="phone-number"
+          id="phone-number"
+          pattern="[0-9]{9}"
+          placeholder="#########"
+        />
+        <br />
+        <p>Ethnicity</p>
+        <br />
+        <input
+          type="radio"
+          name="ethnicity"
+          id="earthling"
+          value="earthling"
+          required
+        />
+        <label for="earthling">Earthling</label><br />
+        <input type="radio" name="ethnicity" id="martian" value="martian" />
+        <label for="martian">Martian</label><br />
+        <input type="radio" name="ethnicity" id="asgardian" value="asgardian" />
+        <label for="asgardian">Asgardian</label><br />
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" name="term-of-use" id="term-of-use" required />
+        <label for="term-of-use">
+          I swear that I totally read the terms of use.
+        </label>
+        <br />
+        <input type="submit" name="submit" />
+      </fieldset>
+    </main>
+  </body>
+</html>
