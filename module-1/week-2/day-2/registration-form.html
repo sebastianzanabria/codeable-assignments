@@ -5,29 +5,37 @@
   </head>
   <body>
     <main>
+      <h1>Ready to get started?</h1>
+      <p>Prepare to join one of the top lawyer communities</p>
       <form>
         <fieldset>
-          <label for="first-name">First Name</label>
+          <label for="first-name">First Name</label><br />
           <input
             type="text"
             name="first-name"
             id="first-name"
-            value="first_name"
+            placeholder="e.g. John"
           />
           <br />
-          <label for="last-name">Last Name</label>
+          <label for="last-name">Last Name</label><br />
           <input
             type="text"
             name="last-name"
             id="last-name"
-            value="last_name"
+            placeholder="e.g. Smith"
             required
           />
           <br />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" value="email" required />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
           <br />
-          <label for="zip-code">Zip Code</label>
+          <label for="zip-code">Zip Code</label><br />
           <input
             type="tel"
             name="zip-code"
@@ -37,22 +45,20 @@
             required
           />
           <br />
-          <label for="password">Password</label>
+          <label for="password">Password</label><br />
           <input type="password" name="password" id="password" required />
           <br />
-          <label for="practicing-status">Practicing Status</label>
-          <select
-            name="practicing-status"
-            id="practicing-status"
-            size="3"
-            required
-          >
+          <label for="practicing-status">Practicing Status</label><br />
+          <select name="practicing-status" id="practicing-status" required>
+            <option value="" disabled selected>Select your option</option>
             <option value="0">Practicing Lawyer</option>
             <option value="1">Non Practicing Lawyer</option>
             <option value="2">Retired Lawyer</option>
           </select>
           <br />
-          <label for="area-expertise">Area of legal expertise</label>
+          <label for="area-expertise">
+            Area of legal expertise <span>(Optional)</span> </label
+          ><br />
           <select name="area-expertise" id="area-expertise">
             <option value="antitrust">Antitrust</option>
             <option value="civil_rights">Civil Rights</option>
@@ -63,7 +69,7 @@
             <option value="other" selected>Other</option>
           </select>
           <br />
-          <label for="years-of-experience">Years of experience</label>
+          <label for="years-of-experience">Years of experience</label><br />
           <input
             type="number"
             name="years-of-experience"
@@ -73,8 +79,8 @@
             required
           />
           <br />
-          <label for="languages">Languages</label> <br />
-          <select name="languages" id="languages" multiple>
+          <label for="languages">Languages<span>(Optional)</span></label> <br />
+          <select name="languages" id="languages" size="3" multiple>
             <option value="es">Spanish</option>
             <option value="en">English</option>
             <option value="do">Dothraki</option>
@@ -85,7 +91,9 @@
             <option value="el">Elvish</option>
           </select>
           <br />
-          <label for="phone-number">Cell Phone Number</label>
+          <label for="phone-number"
+            >Cell Phone Number<span>(Optional)</span></label
+          ><br />
           <input
             type="tel"
             name="phone-number"
@@ -95,7 +103,6 @@
           />
           <br />
           <p>Ethnicity</p>
-          <br />
           <input
             type="radio"
             name="ethnicity"
@@ -103,16 +110,16 @@
             value="earthling"
             required
           />
-          <label for="earthling">Earthling</label><br />
+          <label for="earthling">Earthling</label>
           <input type="radio" name="ethnicity" id="martian" value="martian" />
-          <label for="martian">Martian</label><br />
+          <label for="martian">Martian</label>
           <input
             type="radio"
             name="ethnicity"
             id="asgardian"
             value="asgardian"
           />
-          <label for="asgardian">Asgardian</label><br />
+          <label for="asgardian">Asgardian</label>
         </fieldset>
         <fieldset>
           <input type="checkbox" name="term-of-use" id="term-of-use" required />
