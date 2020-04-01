@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.general-font {
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  background: #e5e5e5;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.hero p {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  color: #666666;
+}
+.features p {
+  text-align: unset;
+}
